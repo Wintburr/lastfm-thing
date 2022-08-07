@@ -1,6 +1,8 @@
 # Last.fm last listened to song displayer
 This simple Python script asks the Last.fm API for the last song you listened to, then displays it in your CLI. You can use it as a base for a bigger script that could display the current song you're listening to on your Discord status, your Twitter status, or whatnot. This is all made so that it can run without any user input in mind, so that it's easy to just run and forget.
 
+**FYI THIS SCRIPT RUNS IN A SORT OF "GET" API REQUEST SPAM WAY**, this script will literally ask the Last.fm API your account's activity **everytime you run it**, do **not** run it in a loop.
+
 ## Installation/Dependencies
 This script uses the <a href="https://github.com/xiaomyer/lastfmpy">lastfmpy</a> Python dependency, as well as asyncio which is required for lastfmpy. 
 You will also need a <a href="https://www.last.fm/api/account/create">Last.fm API key</a>, but it is *very* easy to make one.
