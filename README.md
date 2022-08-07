@@ -19,4 +19,4 @@ Actually use the `lastfm.user.get_now_playing` function of lastfmpy instead of t
 <br> Actually turn this into something that can be used to integrate my Last.fm Now Listening To thing in a Discord Rich Presence thing and whatnot other very fancy stuff
 
 ## LICENSE
-This is currently using the WTFPL
+This is currently using the WTFPL, just do whatever the fuck you want with this, crediting is appreciated, but not needed. :)
