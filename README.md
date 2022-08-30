@@ -13,7 +13,8 @@ This script also uses <a href="https://pypi.org/project/pypresence/">Pypresence<
 ## How to run it
 You will only need to change two things in the Python file itself : the username that the API will check for, and your API key.
 <br> To replace the username : replace the `SETUSERNAMEHERE` part (at line 11) with the username you want to check for.
-<br> To replace the API key : replace the `SETAPIKEYHERE` (at line 5) with your own.
+<br> To replace the API key : replace the `SETLASTFMAPIKEYHERE` (at line 5) with your own.
+<br> If you want Discord Rich Presence support, then you will need to use your own Discord app client ID by replacing the `SETDISCORDCLIENTIDHERE`. 
 
 # Screenshot/Example :
 ![image](https://user-images.githubusercontent.com/109423445/183299788-0a3f48d8-ef09-45e2-b085-3f6aed871e33.png)
