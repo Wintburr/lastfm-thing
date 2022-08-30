@@ -13,7 +13,7 @@ client_id = 'SETDISCORDCLIENTIDHERE' # Replace this with your own Discord client
 RPC = Presence(client_id)
 RPC.connect()
 
-API_KEY = "SETAPIKEYHERE " # Replace this with your own Last.fm API key, you can get one at https://www.last.fm/api
+API_KEY = "SETAPIKEYHERE" # Replace this with your own Last.fm API key, you can get one at https://www.last.fm/api
 
 def resize(fp: str, scale: Union[float, int]) -> np.ndarray:
     _scale = lambda dim, s: int(dim * s / 100)
