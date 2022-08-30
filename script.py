@@ -8,12 +8,12 @@ from pypresence import Presence
 import nest_asyncio
 nest_asyncio.apply()
 
-client_id = 'REPLACETHISWITHDISCORDCLIENTID' # Replace this with your own Discord client id, only necessary if you want Discord Rich Presence support 
+client_id = 'SETDISCORDCLIENTIDHERE' # Replace this with your own Discord client id, only necessary if you want Discord Rich Presence support 
                                              # You can get one at https://discord.com/developers/applications
 RPC = Presence(client_id)
 RPC.connect()
 
-API_KEY = "REPLACETHISWITHLASTFMAPIKEY" # Replace this with your own Last.fm API key, you can get one at https://www.last.fm/api
+API_KEY = "SETAPIKEYHERE " # Replace this with your own Last.fm API key, you can get one at https://www.last.fm/api
 
 def resize(fp: str, scale: Union[float, int]) -> np.ndarray:
     _scale = lambda dim, s: int(dim * s / 100)
@@ -27,7 +27,7 @@ def resize(fp: str, scale: Union[float, int]) -> np.ndarray:
 async def main():
     lastfm = await LastFM(API_KEY)
 #   recent = await lastfm.user.get_now_playing("Luttyz")
-    what = await lastfm.user.get_recent_tracks("Luttyz",extended=True) # REPLACE `Luttyz` WITH YOUR LAST.FM USERNAME
+    what = await lastfm.user.get_recent_tracks("SETUSERNAMEHERE",extended=True) # REPLACE `Luttyz` WITH YOUR LAST.FM USERNAME
     print(f"\"{what.items[0].name}\" by {what.items[0].artist} from \"{what.items[0].album}\"")
 #   THIS IS THE PART WHERE WE WRITE INFOS IN A PNG SO YOU CAN RUN THIS SCRIPT ON A WEB SERVER AND EMBED THE IMAGE ON YOUR GITHUB AND OTHER
     width = 500
