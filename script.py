@@ -30,7 +30,10 @@ async def main():
     what = await lastfm.user.get_recent_tracks("SETUSERNAMEHERE",extended=True) # REPLACE `Luttyz` WITH YOUR LAST.FM USERNAME
     print(f"\"{what.items[0].name}\" by {what.items[0].artist} from \"{what.items[0].album}\"")
 #   THIS IS THE PART WHERE WE WRITE INFOS IN A PNG SO YOU CAN RUN THIS SCRIPT ON A WEB SERVER AND EMBED THE IMAGE ON YOUR GITHUB AND OTHER
-    width = 500
+    if len(text) > 47 :
+       width = 410
+    else :
+       width = 330
     height = 50
     text = (f"\"{what.items[0].name}\" by {what.items[0].artist} from \"{what.items[0].album}\"")
     img = Image.new('RGB', (width, height), color='black')
