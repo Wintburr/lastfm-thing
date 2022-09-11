@@ -9,7 +9,7 @@ You will also need a <a href="https://www.last.fm/api/account/create">Last.fm AP
 <br>
 This script also uses <a href="https://pypi.org/project/pypresence/">Pypresence</a>, although this can be removed if you do not need or want Discord Rich Presence support.
 <br>
-**You can install all dependencies with : `pip install lastfmpy asyncio pillow==9.2.0 numpy typing pypresence nest_asyncio`**
+**You can install all dependencies with : `pip install lastfmpy aiohttp asyncio pillow==9.2.0 numpy typing pypresence nest_asyncio`**
 ## How to run it
 You will only need to change two things in the Python file itself : the username that the API will check for, and your API key.
 <br> To replace the username : replace the `SETUSERNAMEHERE` part (at line 11) with the username you want to check for.
