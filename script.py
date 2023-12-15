@@ -9,7 +9,7 @@ import nest_asyncio
 nest_asyncio.apply()
 
 client_id = 'SETDISCORDCLIENTIDHERE' # Replace this with your own Discord client id, only necessary if you want Discord Rich Presence support 
-                                             # You can get one at https://discord.com/developers/applications
+                                     # You can get one at https://discord.com/developers/applications
 RPC = Presence(client_id)
 RPC.connect()
 
@@ -42,7 +42,7 @@ async def main():
     img.save('result.png')
     resized = resize("result.png", 200)
     resized.save("wa.png")
-#   THIS IS THE PART FOR DISCORD RICH PRESENCE SUPPORT, IT'S VERY BAREBONES AND YOU HONESTLY MIGHT NOT WANT IT SO JUST COMMENT THE NEXT LINE IF YOOU DON'T WANT
+#   THIS IS THE PART FOR DISCORD RICH PRESENCE SUPPORT, IT'S VERY BAREBONES AND YOU HONESTLY MIGHT NOT WANT IT SO JUST COMMENT THE NEXT LINE IF YOU DON'T WANT
     RPC.update(details="Listening to",state=f"\"{what.items[0].name}\" by {what.items[0].artist} from \"{what.items[0].album}\"")
     time.sleep(15)
 
