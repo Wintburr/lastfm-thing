@@ -1,0 +1,5 @@
+lastfmpy
+Pillow
+numpy
+pypresence
+nest_asyncio
